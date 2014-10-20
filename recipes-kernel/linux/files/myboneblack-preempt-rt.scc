@@ -1,0 +1,12 @@
+define KMACHINE myboneblack
+define KTYPE preempt-rt
+define KARCH arm
+
+include ktypes/preempt-rt/preempt-rt.scc
+branch myboneblack
+
+include myboneblack.scc
+
+# default policy for preempt-rt kernels
+include features/latencytop/latencytop.scc
+include features/profiling/profiling.scc

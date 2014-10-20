@@ -1,0 +1,12 @@
+define KMACHINE myboneblack
+define KTYPE standard
+define KARCH arm
+
+include ktypes/standard/standard.scc
+branch myboneblack
+
+include myboneblack.scc
+
+# default policy for standard kernels
+include features/latencytop/latencytop.scc
+include features/profiling/profiling.scc

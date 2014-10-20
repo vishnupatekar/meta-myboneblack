@@ -1,0 +1,8 @@
+define KMACHINE myboneblack
+define KTYPE tiny
+define KARCH arm
+
+include ktypes/tiny/tiny.scc
+branch myboneblack
+
+include myboneblack.scc

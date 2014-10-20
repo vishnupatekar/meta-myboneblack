@@ -1,0 +1,5 @@
+kconf hardware myboneblack.cfg
+include features/usb-net/usb-net.scc
+
+kconf hardware myboneblack-user-config.cfg
+include myboneblack-user-patches.scc
